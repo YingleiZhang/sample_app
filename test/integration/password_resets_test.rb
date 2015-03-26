@@ -8,7 +8,7 @@ class PasswordResetsTest < ActionDispatch::IntegrationTest
   end
 
   test "password resets" do
-=begin
+
     get new_password_reset_path
     assert_template 'password_resets/new'
 
@@ -69,6 +69,6 @@ class PasswordResetsTest < ActionDispatch::IntegrationTest
     assert is_logged_in?
     assert_not flash.empty?
     assert_redirected_to user
-=end
+
   end
 end
